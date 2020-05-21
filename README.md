@@ -1,10 +1,16 @@
-# Pi-Star-Mapper
+# Pi-Star Mapper
 This amateur radio/ham project uses PowerShell and Node Red to map amateur radio operators as they broadcast over your local Pi-Star hotspot.
+This has been tested with Pi-Star v4.1.1 and DMR on Brandmeister.
 
+[Node Red World Map]
 ![GitHub Logo](/media/HeatMap.jpg)
+
+[PowerShell Terminal Logger]
+![GitHub Logo](/media/terminalLog.jpg)
 
 ## Prerequisites
 1) Node Red - (https://nodered.org/)
+2) node-red-contrib-web-worldmap - (https://flows.nodered.org/node/node-red-contrib-web-worldmap)
 2) PowerShell (This is untested outside of Windows 10)
 3) Free Opencagedata.com account for API access (https://opencagedata.com/)
 4) Pi-Star
