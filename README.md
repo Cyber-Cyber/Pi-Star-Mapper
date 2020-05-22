@@ -8,6 +8,9 @@ This has been tested with Pi-Star v4.1.1 and DMR on Brandmeister.
 [PowerShell Terminal Logger]
 ![GitHub Logo](/media/terminalLog.jpg)
 
+## Installation Video
+[![Installation Video](https://img.youtube.com/vi/n9EfXI2oWaA/0.jpg)](https://www.youtube.com/watch?v=n9EfXI2oWaA)
+
 ## Prerequisites
 1) NodeJS - (https://nodejs.org/)
 2) Node Red - (https://nodered.org/)
