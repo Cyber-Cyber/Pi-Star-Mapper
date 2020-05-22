@@ -43,6 +43,8 @@ Copy the contents of nodered-pi-star-mapper.json and then open Node Red. Click o
 If you want to change any of the variables in a node, double click to edit it's properties. Tip: After you run pistar-mapper.ps1, if you click on the debug icon on the right side of Node Red, you should see the update come through as they're published. If you see nothing, check the $nodeRedHttp variable in the pistar-mapper.ps1 file.
 
 ## How To Run
-Open a PowerShell window and navigate to the directory you saved the pistar-mapper.ps1 file. Simply type '.\pistar-mapper.ps1' followed by the 'enter' key. This should start the script which will display a log of time, callsign, name, talkgroup number and name. Next you'll want to open a web browser and go to http://ip:1880/pistarmapper (where you replace ip with the IP address that you installed Node Red on). After the page loads, the next time a new callsign comes in, it should automatically update the map!
+Open a PowerShell window and navigate to the directory you saved the pistar-mapper.ps1 file. Simply type
+'powershell.exe –ExecutionPolicy Bypass .\pistar-mapper.ps1'   
+followed by the 'enter' key. This should start the script which will display a log of time, callsign, name, talkgroup number and name. Next you'll want to open a web browser and go to http://ip:1880/pistarmapper (where you replace ip with the IP address that you installed Node Red on). After the page loads, the next time a new callsign comes in, it should automatically update the map!
 
 # 73!
