@@ -9,11 +9,13 @@ This has been tested with Pi-Star v4.1.1 and DMR on Brandmeister.
 ![GitHub Logo](/media/terminalLog.jpg)
 
 ## Prerequisites
-1) Node Red - (https://nodered.org/)
-2) node-red-contrib-web-worldmap - (https://flows.nodered.org/node/node-red-contrib-web-worldmap)
-2) PowerShell (tested on Windows 10)
-3) Free Opencagedata.com account for API access (https://opencagedata.com/)
-4) Pi-Star - (https://www.pistar.uk/)
+1) NodeJS - (https://nodejs.org/)
+2) Node Red - (https://nodered.org/)
+3) node-red-contrib-web-worldmap - (https://flows.nodered.org/node/node-red-contrib-web-worldmap)
+4) node-red-dashboard - (https://flows.nodered.org/node/node-red-dashboard)
+5) PowerShell (tested on Windows 10)
+6) Free Opencagedata.com account for API access (https://opencagedata.com/)
+7) Pi-Star - (https://www.pistar.uk/)
 
 
 ## How It Works
@@ -38,4 +40,4 @@ If you want to change any of the variables in a node, double click to edit it's 
 ## How To Run
 Open a PowerShell window and navigate to the directory you saved the pistar-mapper.ps1 file. Simply type '.\pistar-mapper.ps1' followed by the 'enter' key. This should start the script which will display a log of time, callsign, name, talkgroup number and name. Next you'll want to open a web browser and go to http://ip:1880/pistarmapper (where you replace ip with the IP address that you installed Node Red on). After the page loads, the next time a new callsign comes in, it should automatically update the map!
 
-# 73's!
+# 73!
