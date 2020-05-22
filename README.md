@@ -30,7 +30,12 @@ This has been tested with Pi-Star v4.1.1 and DMR on Brandmeister.
 
 ## Setup
 ### Configure pistar-mapper.ps1
-Open pistar-mapper.ps1 in your favorite text editor and locate the #### Change these variables section. Below you'll be able to modify the $OpenCageAPIKey to match your specific API key. The $PiStar variable needs to have your Pi-Star's IP address or hostname. $photoIcon comes with a base64 encoded image and is used if the callsign doesn't have an image published on qrz.com. You can change this out with another base64 image or change it to a url of an image. $nodeRedHttp should be changed to reflect your Node Red's IP address and match the http input node inside of your Node Red flow. $sleepTimer is how often Pi-Star Mapper checks for new callsigns in Pi-Star. $ttl tells Node Red's map how long to leave a pin in the map. If you run this for a long time, it can cause your map to be very crowded over time. (Tip: Enabling the heat map layer in the top right of Node Red will give you a long term idea of where stations are located as long as you don't refresh the page).
+Open pistar-mapper.ps1 in your favorite text editor and locate the #### Change these variables section. Below you'll be able to modify the $OpenCageAPIKey to match your specific API key.  
+$PiStar variable needs to have your Pi-Star's IP address or hostname.  
+$photoIcon comes with a base64 encoded image and is used if the callsign doesn't have an image published on qrz.com. You can change this out with another base64 image or change it to a url of an image.  
+$nodeRedHttp should be changed to reflect your Node Red's IP address and match the http input node inside of your Node Red flow. The default is localhost, so you should only need to change this if the pistar-mapper.ps1 and Node Red are being ran on different machines.  
+$sleepTimer is how often Pi-Star Mapper checks for new callsigns in Pi-Star.  
+$ttl tells Node Red's map how long to leave a pin in the map. If you run this for a long time, it can cause your map to be very crowded over time. (Tip: Enabling the heat map layer in the top right of Node Red will give you a long term idea of where stations are located as long as you don't refresh the page).
 
 ### Configure Node Red
 Copy the contents of nodered-pi-star-mapper.json and then open Node Red. Click on the 'hamburger button' in the top right and select import. Paste the contents from nodered-pi-star-mapper.json into that screen and click OK. You should now see something that looks like this:
